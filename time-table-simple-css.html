@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical 3</title>
+    <style>
+        /* General Body Styles */
+        body {
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centering the Table on Page */
+        table {
+            width: 90%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header Styles */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid #ddd;
+        }
+
+        /* Data Cell Styles */
+        td {
+            padding: 12px 15px;
+            text-align: center;
+            font-size: 14px;
+            background-color: #fff;
+            color: #333;
+            border: 1px solid #ddd;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        td[rowspan] {
+            background-color: #f2f2f2;
+            color: #555;
+            font-weight: bold;
+        }
+
+        /* Hover Effect for Data Cells */
+        td:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.02);
+        }
+
+        /* Row Styles */
+        tr:nth-child(even) td {
+            background-color: #f9f9f9;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #ffffff;
+        }
+
+        /* Rowspan Text Style */
+        td[rowspan] {
+            background-color: #ffeb3b;
+            color: #bef8ac;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* Table Border */
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+                font-size: 12px;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Day-time</th>
+            <th>10:30 to 11:30</th>
+            <th>11:30 to 12:30</th>
+            <th>12:30 to 1:30</th>
+            <th>1:30 to 2:30</th>
+            <th>2:30 to 3:30</th>
+            <th>3:30 to 4:30</th>
+            <th>4:30 to 5:30</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td align="center">ICLA</td>
+            <td align="center">AP</td>
+            <td align="center">FORUM</td>
+            <td rowspan="6" align="center">R<br>E<br>C<br>E<br>S<br>S</td>
+            <td align="center">T.G HOUR</td>
+            <td colspan="2" align="center">ACPL</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td align="center">AP</td>
+            <td colspan="2" align="center">WDP</td>
+            <td align="center">ICLA</td>
+            <td align="center">LLC-1</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td align="center">ACP</td>
+            <td colspan="2" align="center">APL</td>
+            <td align="center">LIBRARY</td>
+            <td colspan="2" align="center">WD</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td align="center">IKS</td>
+            <td colspan="2" align="center">EGD</td>
+            <td align="center">ICLA</td>
+            <td colspan="2" align="center">Miscellaneous</td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td colspan="2" align="center">EGDL</td>
+            <td align="center">SELF LEARNING</td>
+            <td align="center">ACP</td>
+            <td align="center">IKS</td>
+            <td align="center">SPORTS</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td colspan="2" align="center">EGDL</td>
+            <td align="center">ICLA</td>
+            <td align="center">LLC-1</td>
+            <td colspan="2" align="center">MAKEUP CLASS</td>
+        </tr>
+    </table>
+
+</body>
+</html>
