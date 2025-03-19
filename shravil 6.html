@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Registration Form</title>
+    <style>
+        .bg-image{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUk_8TpBqQlMHXtAbO37GeVOamAfYZrEG8b-fORFmMgDS6HLZ-9ryb6MA9GhIgTD6hjLw&usqp=CAU");
+            background-size: cover;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        .container {
+            width: 30%;
+            margin: auto;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background:rgba(0, 0, 0, 0.1);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #f53c64;
+        }
+        .input{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="bg-image">
+    <div class="container">
+        <h2>Scholarship Registration Form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="fullname">Full Name:</label>
+            <input class="input"type="text" id="fullname" name="fullname" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input class="input"type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address:</label>
+            <input class="input"type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input class="input" type="tel" id="phone" name="phone" required>
+
+            <label for="address">Home Address:</label>
+            <textarea class="input" id="address" name="address" rows="3" required></textarea>
+
+            <label for="education">Current Education Level:</label>
+            <select class="input" id="education" name="education" required>
+                <option value="">Select</option>
+                <option value="highschool">High School</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select>
+
+            <label for="grades">Recent GPA/Grade:</label>
+            <input class="input" type="text" id="grades" name="grades" required>
+
+            <label for="essay">Why do you deserve this scholarship? (Max 500 words):</label>
+            <textarea class="input"  id="essay" name="essay" rows="5" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
